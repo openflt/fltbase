@@ -1,0 +1,19 @@
+schema:
+  - ent.graphql
+  - mutations.graphql
+  - extended.graphql
+
+resolver:
+  layout: follow-schema
+  dir: .
+
+autobind:
+  - github.com/openflt/fltbase/ent
+
+models:
+  ID:
+    model:
+      - github.com/openflt/fltbase/ent/schema/xidgql.ID
+  Node:
+    model:
+      - github.com/openflt/fltbase/ent.Noder
